@@ -1,0 +1,635 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Web du lich</title>
+    <script src="https://kit.fontawesome.com/2d7e266e2b.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .po {
+            position: fixed;
+        }
+
+        .nav1 {
+            background-color: #f5f6fa;
+            width: 100%;
+        }
+
+            .nav1 ul {
+                display: flex;
+                justify-content: between;
+                align-items: center;
+            }
+
+            .nav1 img {
+                width: 160px;
+                height: 60px;
+                margin: 0px 80px 0px 70px;
+            }
+
+            .nav1 input {
+                width: 610px;
+                height: 35px;
+                margin: 10px 0px 10px 10px;
+                padding: 10px;
+            }
+
+        .button2 {
+            width: 35px;
+            height: 35px;
+            margin: 10px 80px 10px 0px;
+            background-color: #EE5A24;
+            border-radius: 1px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button1 {
+            background-color: #00a8ff;
+            width: 95px;
+            height: 35px;
+            border-radius: 4px;
+            font-size: 14px;
+            text-align: center;
+            margin: 10px;
+            pading: 10px;
+            color: #f5f6fa;
+            cursor: pointer;
+            border: none;
+        }
+
+        .menu-bar {
+            background-color: #D980FA;
+        }
+
+            .menu-bar ul {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+
+                .menu-bar ul li {
+                    list-style-type: none;
+                    width: 234px;
+                    text-align: center;
+                }
+
+                    .menu-bar ul li a {
+                        color: #f5f6fa;
+                        text-transform: uppercase;
+                        font-size: 25px;
+                        font-weight: bold: font-family:Arial, Helvetica, sans-serif;
+                    }
+
+        .menu-bar-content a {
+            text-decoration: none;
+        }
+
+        .menu-bar-content i {
+            font-size: 15px;
+        }
+
+        .menu-bar ul li {
+            padding: 15px 15px;
+        }
+
+            .menu-bar ul li a:hover {
+                color: #353b48;
+            }
+
+        footer {
+            width: 100%;
+            background-color: #130f40;
+            display: flex;
+            height: 240px;
+            margin: 0px;
+            padding: 0px;
+            justify-content: between;
+        }
+
+        .ttlh {
+            width: 510px;
+        }
+
+            .ttlh h2 {
+                text-align: center;
+                margin: 20px 20px;
+                font-size: 25px;
+                color: #44bd32;
+                font-weight: bold: font-family:Arial, Helvetica, sans-serif;
+                text-transform: uppercase;
+            }
+
+            .ttlh p {
+                text-align: center;
+                font-size: 25px;
+                color: #f0f2f5;
+                font-weight: bold: font-family:Arial, Helvetica, sans-serif;
+            }
+
+            .ttlh li {
+                color: #f0f2f5;
+                font-weight: bold: font-family:Arial, Helvetica, sans-serif;
+                margin: 8px 110px;
+                font-size: 15px;
+            }
+
+            .ttlh i {
+                margin: 0px 6px;
+                font-size: 15px;
+            }
+
+        .httv {
+            width: 350px;
+        }
+
+            .httv ul {
+                display: flex;
+                justify-content: between;
+            }
+
+            .httv h2 {
+                text-align: center;
+                margin: 20px 20px;
+                font-size: 25px;
+                color: #44bd32;
+                font-weight: bold: font-family:Arial, Helvetica, sans-serif;
+                text-transform: uppercase;
+            }
+
+            .httv ul {
+                margin: 0px 100px;
+            }
+
+            .httv p {
+                text-align: center;
+                font-size: 20px;
+                color: #fff200;
+                font-weight: bold: font-family:Arial, Helvetica, sans-serif;
+            }
+
+            .httv img {
+                width: 25px;
+                height: 25px;
+                margin: 20px 6px;
+            }
+
+        .ttcb {
+            width: 510px;
+        }
+
+            .ttcb h2 {
+                text-align: center;
+                margin: 20px 20px;
+                font-size: 25px;
+                color: #44bd32;
+                font-weight: bold: font-family:Arial, Helvetica, sans-serif;
+                text-transform: uppercase;
+            }
+
+            .ttcb li {
+                margin: 7px 0px;
+            }
+
+                .ttcb li a {
+                    color: #f0f2f5;
+                    font-weight: bold: font-family:Arial, Helvetica, sans-serif;
+                    margin: 0px 125px;
+                    font-size: 20px;
+                    text-decoration: none;
+                }
+
+                    .ttcb li a:hover {
+                        color: #2C3A47;
+                    }
+
+        .product {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0;
+            background-color: #f5f6fa;
+        }
+
+        .tilte h1 {
+            text-align: center;
+            margin: 0px 0px 10px 15px;
+            text-transform: uppercase;
+            color: #ffa502;
+            font-family: Arial;
+        }
+
+        .content {
+            width: 1020px;
+            height: 1090px;
+            margin: 0 auto;
+            padding: 0 auto;
+        }
+
+        .content1, .content2 {
+            display: flex;
+            justify-content: space-around;
+            margin: 0px 0px 25px 0px;
+            ;
+        }
+
+        .product-content {
+            border: 1px solid #1e272e;
+            height: 500px;
+        }
+
+            .product-content img {
+                width: 300px;
+                height: 370px;
+                cursor: pointer;
+            }
+
+        .product-content-text a {
+            text-decoration: none;
+            font-size: 20px;
+            color: #130f40;
+            margin: 0px 0px 0px 15px;
+            font-weight: 580;
+        }
+
+        .product-content-text p {
+            margin: 10px 15px;
+            color: #ff7979;
+        }
+
+        .product-content-text i {
+            margin: 0px 5px 0px 0px;
+        }
+
+        .product-content-text span {
+            margin: 5px 15px;
+            color: #f0932b;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .product-content-text ul {
+            display: flex;
+            justify-content: between;
+            padding: 0px 15px;
+        }
+
+        .product-content-text button {
+            display: inline-flex;
+            margin: 0px 20px 0px 0px;
+            background-color: #e84118;
+            width: 75px;
+            height: 25px;
+            border-radius: 4px;
+            font-size: 12px;
+            text-align: center;
+            color: #f5f6fa;
+            cursor: pointer;
+            border: none;
+            text-transform: uppercase;
+            font-family: Arial;
+        }
+
+        .introduce {
+            width: 1020px;
+            margin: 0 auto;
+        }
+
+            .introduce h2 {
+                color: #130f40;
+                margin: 10px 10px;
+            }
+
+            .introduce p {
+                margin: 20px;
+                font-size: 18px;
+                line-height: 20px;
+            }
+
+            .introduce h1 {
+                text-align: center;
+                margin: 0px 0px 10px 15px;
+                text-transform: uppercase;
+                color: #ffa502;
+                font-family: Arial;
+            }
+
+        .exp {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .exp1 {
+            width: 1020px;
+            margin: auto;
+        }
+
+        .exp ul {
+            display: flex;
+        }
+
+        .exp1 img {
+            width: 300px;
+            height: 200px;
+        }
+
+        .exp ul li a {
+            text-decoration: none;
+            font-size: 25px;
+            color: #1e272e;
+        }
+
+        .homepage {
+            width: 100%;
+            height: 480px;
+        }
+
+        .picture img {
+            width: 1350px;
+            height: 300px;
+            margin: 122px 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="po">
+        <nav class="nav1">
+            <ul>
+                <li><a href=""><img src="anh0.1.jpg" alt="" /></a></li>
+                <li><input type="text" placeholder="Nhập khách sạn hoặc địa điểm muốn tìm ..." /><button class="button2"><i class="fa-solid fa-magnifying-glass" style="color: #fffafd;"></i></button></li>
+                <li><button class="button1">Đăng ký</button></li>
+                <li><button class="button1">Đăng nhập</button></li>
+            </ul>
+        </nav>
+        <section class="menu-bar">
+            <div class="menu-bar-content">
+                <ul>
+                    <li><a href="">Trang chủ</a></li>
+                    <li><a href="">Khách sạn<i class="fa-solid fa-chevron-down" style="color: #bac5d8;"></i></a></li>
+                    <li><a href="">Tour du lịch<i class="fa-solid fa-chevron-down" style="color: #bac5d8;"></i></a></li>
+                    <li><a href="">Giới thiệu</a></li>
+                    <li><a href="">Cẩm nang<i class="fa-solid fa-chevron-down" style="color: #bac5d8;"></i></a></li>
+                    <li><a href="https://doducloc01072004.github.io/doducloc20/HTMLPage3">Liên hệ</a></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <div class="homepage">
+        <div class="picture"><img src="anh0.2.jpg" />"</div>
+    </div>
+    <div class="product">
+        <div class="tilte">
+            <h1>Khách sạn</h1>
+        </div>
+        <div class="content">
+            <div class="content1">
+                <div class="product-content">
+                    <img src="anh0.3.jpg" />
+                    <div class="product-content-text">
+                        <a href="#">Resort Hội An</a>
+                        <p><i class="fa-sharp fa-solid fa-location-dot" style="color: #091120;"></i>Địa Chỉ:20 Lê Lợi,Hội An</p>
+                        <ul>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                        </ul>
+                        <span>900.000 đồng/ngày</span>
+                        <button>Xem chi tiết</button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <img src="anh0.4.jpg" />
+                    <div class="product-content-text">
+                        <a href="#">Dalat Wonder Resort </a>
+                        <p><i class="fa-sharp fa-solid fa-location-dot" style="color: #091120;"></i>Địa Chỉ:19 Hoa Hồng,T.Phố Đà Lạt</p>
+                        <ul>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #babcae;"></i></li>
+                        </ul>
+                        <span>800.000 đồng/ngày</span>
+                        <button>Xem chi tiết</button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <img src="anh0.5.jpg" />
+                    <div class="product-content-text">
+                        <a href="#">Royal Lotus Ha Long Resort</a>
+                        <p><i class="fa-sharp fa-solid fa-location-dot" style="color: #091120;"></i>Địa Chỉ:Bán đảo 2,T.Phố Hạ Long</p>
+                        <ul>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                        </ul>
+                        <span>900.000/ngày</span>
+                        <button>Xem chi tiết</button>
+                    </div>
+                </div>
+            </div>
+            <div class="content2">
+                <div class="product-content">
+                    <img src="anh0.6.jpg" />
+                    <div class="product-content-text">
+                        <a href="#">The Reed Hotel</a>
+                        <p><i class="fa-sharp fa-solid fa-location-dot" style="color: #091120;"></i>Địa Chỉ:Đông Thành,T.Phố Ninh Bình</p>
+                        <ul>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #babcae;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #babcae;"></i></li>
+                        </ul>
+                        <span>500.000/ngày</span>
+                        <button>Xem chi tiết</button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <img src="anh0.7.jpg" />
+                    <div class="product-content-text">
+                        <a href="#">Victory Hotel</a>
+                        <p><i class="fa-sharp fa-solid fa-location-dot" style="color: #091120;"></i>Địa Chỉ:36 Lê Duẩn,T.Phố Hà Giang</p>
+                        <ul>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #babcae;"></i></li>
+                        </ul>
+                        <span>600.000/ngày</span>
+                        <button>Xem chi tiết</button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <img src="anh0.8.jpg" />
+                    <div class="product-content-text">
+                        <a href="#">Khách sạn SAM Quảng Bình</a>
+                        <p><i class="fa-sharp fa-solid fa-location-dot" style="color: #091120;"></i>Địa Chỉ:13 Lý Thường Kiệt,Đồng Hới</p>
+                        <ul>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #babcae;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #babcae;"></i></li>
+                        </ul>
+                        <span>500.000/ngày</span>
+                        <button>Xem chi tiết</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="tilte">
+                <h1>Tour du lịch</h1>
+            </div>
+            <div class="content">
+                <div class="content1">
+                    <div class="product-content">
+                        <img src="anh0.9.jpg" />
+                        <div class="product-content-text">
+                            <a href="#">Tour Quảng Bình 7 ngày 7 đêm</a>
+                            <p><i class="fa-regular fa-clock" style="color: #091120;"></i>7 ngày 7 đêm</p>
+                            <p><i class="fa-regular fa-calendar-days" style="color: #091120;"></i>Hà Nội-Quảng Bình-Hà Nội</p>
+                            <span>8.700.000 đồng</span>
+                            <button>Xem chi tiết</button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <img src="anh1.0.jpg" />
+                        <div class="product-content-text">
+                            <a href="#">Tour Đà Nẵng - Hội An 4N3Đ </a>
+                            <p><i class="fa-regular fa-clock" style="color: #091120;"></i>4 ngày 3 đêm</p>
+                            <p><i class="fa-regular fa-calendar-days" style="color: #091120;"></i>Hồ Chí Minh-Đà Nẵng-Hồ Chí Minh</p>
+                            <span>5.200.000 đồng</span>
+                            <button>Xem chi tiết</button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <img src="anh1.1.jpg" />
+                        <div class="product-content-text">
+                            <a href="#">Tour Hà Giang 5 ngày 4 đêm</a>
+                            <p><i class="fa-regular fa-clock" style="color: #091120;"></i>5 ngày 4 đêm</p>
+                            <p><i class="fa-regular fa-calendar-days" style="color: #091120;"></i>Hà Nội-Hà Giang-Hà Nội</p>
+                            <span>6.700.000 đồng</span>
+                            <button>Xem chi tiết</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="content2">
+                    <div class="product-content">
+                        <img src="anh1.2.jpg" />
+                        <div class="product-content-text">
+                            <a href="#">Tour Ninh Bình 3 ngày 2 đêm</a>
+                            <p><i class="fa-regular fa-clock" style="color: #091120;"></i>3 ngày 2 đêm</p>
+                            <p><i class="fa-regular fa-calendar-days" style="color: #091120;"></i>Hà Nội-Ninh Bình-Hà Nội</p>
+                            <span>3.000.000 đồng</span>
+                            <button>Xem chi tiết</button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <img src="anh1.3.jpg" />
+                        <div class="product-content-text">
+                            <a href="#">Tour Đà Lạt 2 ngày 1 đêm</a>
+                            <p><i class="fa-regular fa-clock" style="color: #091120;"></i>3 ngày 2 đêm</p>
+                            <p><i class="fa-regular fa-calendar-days" style="color: #091120;"></i>Hà Nội-Đà Lạt-Hà Nội</p>
+                            <span>1.800.000 đồng</span>
+                            <button>Xem chi tiết</button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <img src="anh1.4.jpg" />
+                        <div class="product-content-text">
+                            <a href="#">Tour Vịnh Hạ Long 3 ngày 2 đêm</a>
+                            <p><i class="fa-regular fa-clock" style="color: #091120;"></i>3 ngày 2 đêm</p>
+                            <p><i class="fa-regular fa-calendar-days" style="color: #091120;"></i>Hà Nội-Vịnh Hạ Long-Hà Nội</p>
+                            <span>4.700.000 đồng</span>
+                            <button>Xem chi tiết</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="introduce">
+                <h1>Giới thiệu</h1>
+                <h2>Câu chuyện của chúng tôi</h2>
+                <p>- Trips Travel chính là một câu chuyện thành công mà chúng tôi muốn chia sẻ với các bạn. Trips Travel được thành lập vào năm 2023 bởi bởi một cậu sinh viên đến từ Quảng Bình. Đỗ Đức Lộc phụ trách quản lý và sản phẩm, trách nhiệm mảng kinh doanh. Mặc dù có kinh nghiệm nhiều năm làm việc tại một công ty tour du lịch trước đó,Đỗ Đức Lộc vẫn còn nhiều e ngại khi tiếp cận các đối tác nước ngoài, vì nhiều người sẽ nghĩ rằng 18 tuổi là quá trẻ để làm chủ một doanh nghiệp.</p>
+                <p>- Cũng giống như nhiều startup khác, những ngày đầu tiên chúng tôi đã gặp rất nhiều khó khăn. Văn phòng thì nhỏ, các đơn đặt mua đến chậm chạp, chủ yếu từ bạn bè và người thân muốn đặt vé và phòng khách sạn.</p>
+                <h2>Nhận diện thương hiệu</h2>
+                <p>- Giá trị của chúng tôi là giúp việc kinh doanh của công ty tiến hành một cách rất có nguyên tắc.Slogan của chúng tôi là: “Experience is true value” trải nghiệm tạo nên giá trị đích thực.</p>
+                <p>- Tên Trips Travel xuất phát từ thực tế rằng chúng tôi sẵn sàng đồng hành cùng bạn trên mọi chuyến đi , kể cả trong hay là ngoài nước và là một đối tác kinh doanh uy tín, đáng tin cậy với “Sự chăm sóc liên tục” và “khiêm tốn” để chuẩn bị cho tương lai và chúng tôi luôn luôn ghi nhớ rằng khách hàng và đối thủ cạnh tranh là yếu tố cần thiết để cải thiện bản thân doanh nghiệp. “Ngay thẳng” có nghĩa là tính minh bạch và trách nhiệm đi đôi với cảm hứng cũng như thách thức trong công việc. Sống và làm việc theo những giá trị đặc biệt, chia sẻ đam mê và cam kết tiếp tục phấn đấu, sẵn sàng cho những nấc thang cao hơn.</p>
+                <p>Chúng tôi hy vọng sẽ là người bạn đồng hành đáng tin cậy của bạn trong tương lai!</p>
+            </div>
+            <div class="exp">
+                <div class="tilte"><h1>Cẩm nang du lịch</h1></div>
+                <div class="exp1">
+                    <ul>
+                        <li><a href="https://www.vietnambooking.com/du-lich/trai-nghiem/kinh-nghiem-di-phong-nha-ke-bang.html"><img src="anh1.5.jpg"</a></li>
+                        <li><a href="https://www.vietnambooking.com/wp-content/uploads/2021/02/kinh-nghiem-du-lich-phong-nha-ke-bang.jpg">Kinh nghiệm du lịch Phong Nha Kẻ Bàng 2023 | Khám phá vương quốc hang động</a></li>
+                    </ul>
+                </div>
+                <div class="exp1">
+                    <ul>
+                        <li><a href="https://www.bestprice.vn/blog/diem-den-8/sapa-100/chuyen-du-lich-sapa-tu-tuc-cua-nhom-ban-9x_2-1676.html"><img src="anh1.6.jpg"</a></li>
+                        <li><a href="https://www.bestprice.vn/blog/diem-den-8/sapa-100/chuyen-du-lich-sapa-tu-tuc-cua-nhom-ban-9x_2-1676.html">Kinh nghiệm du lịch Sapa tự túc - xách balo lên đường chinh phục Tây Bắc ngay thôi</a></li>
+                    </ul>
+                </div>
+                <div class="exp1">
+                    <ul>
+                        <li><a href="https://www.traveloka.com/vi-vn/explore/destination/du-lich-da-lat-tu-tuc/210868"><img src="anh1.7.png"</a></li>
+                        <li><a href="https://www.traveloka.com/vi-vn/explore/destination/du-lich-da-lat-tu-tuc/210868">Siêu hữu ích: Kinh nghiệm du lịch Đà Lạt tự túc cho người đi lần đầu</a></li>
+                    </ul>
+                </div>
+                <div class="exp1">
+                    <ul>
+                        <li><a href="https://www.vietnambooking.com/du-lich/trai-nghiem/kinh-nghiem-du-lich-ha-giang.html"><img src="anh1.8.jpg"</a></li>
+                        <li><a href="https://www.vietnambooking.com/du-lich/trai-nghiem/kinh-nghiem-du-lich-ha-giang.html">Kinh nghiệm du lịch Hà Giang – Bí kíp chinh phục “con đường hạnh phúc” giữa núi đồi Tây Bắc</a></li>
+                    </ul>
+                </div>
+            </div>
+            <footer>
+                <div class="ttlh">
+                    <h2>Thông tin liên hệ</h2>
+                    <p>Công ty du lịch Trips Travel</p>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot" style="color: #f0f2f5;"></i>02c,Hàn Mặc Tử,Thuận Phước,Hải Châu,Đà Nẵng</li>
+                        <li><i class="fa-solid fa-phone" style="color: #f0f2f5;"></i>0985937104</li>
+                        <li><i class="fa-solid fa-envelope" style="color: #f0f2f5;"></i>doducloc2k4@gmai.com</li>
+                        <li><i class="fa-solid fa-earth-americas" style="color: #f0f2f5;"></i></i>www.doducloc.com</li>
+                    </ul>
+                </div>
+                <div class="httv">
+                    <h2>Hỗ trợ tư vấn</h2>
+                    <p>TEL 0985937104</p>
+                    <p>HOTLINE 0985937104</p>
+                    <ul>
+                        <li><a href="https://www.facebook.com/ca.nam.9237"><img src="anh1.9.png" /></a></li>
+                        <li><a href="https://www.instagram.com/ducloc_0107"><img src="anh2.0.png" /></a></li>
+                        <li><a href="https://twitter.com/Lcc61234221"><img src="anh2.1.png" /></a></li>
+                        <li><img src="anh2.2.png" /></li>
+                    </ul>
+                </div>
+                <div class="ttcb">
+                    <h2>Thông tin cần biết</h2>
+                    <ul>
+                        <li><a href="#">Điều kiện điều khoản</a></li>
+                        <li><a href="#">Phương thức thanh toán</a></li>
+                        <li><a href="#">Bảo mật thông tin khách hàng</a></li>
+                        <li><a href="#">Chính sách quy định</a></li>
+                    </ul>
+                </div>
+            </footer>
+</body>
+</html>
